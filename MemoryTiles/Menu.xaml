@@ -1,0 +1,115 @@
+﻿<Window x:Class="MemoryTiles.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Menu" Height="850" Width="900">
+    <Grid>
+
+        <Label Name="UsernameLabel" Content="Username" HorizontalAlignment="Left" Margin="41,56,0,0" VerticalAlignment="Top" Width="528" RenderTransformOrigin="0.5,0.5" Height="69" FontSize="36" FontFamily="Comic Sans MS">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-1.717"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <!-- File -->
+        <Button Name="NewGameButton" Content="New Game" HorizontalAlignment="Left" Margin="41,0,0,540" Width="238" Cursor="Hand" Click="NewGameButton_Click" RenderTransformOrigin="0.5,0.5" FontSize="36" FontFamily="Comic Sans MS" Height="70" VerticalAlignment="Bottom">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-3.467"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Name="OpenGameButton" Content="Open Game" HorizontalAlignment="Left" Margin="41,0,0,415" Width="245" Cursor="Hand" Click="OpenGameButton_Click" RenderTransformOrigin="0.5,0.5" FontSize="36" FontFamily="Comic Sans MS" Height="70" VerticalAlignment="Bottom">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="6.294"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Name="SaveGameButton" Content="Save Game" HorizontalAlignment="Left" Margin="51,0,0,292" Width="226" Cursor="Hand" Height="70" VerticalAlignment="Bottom" Click="SaveGameButton_Click" RenderTransformOrigin="0.5,0.5" FontSize="36" FontFamily="Comic Sans MS">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="3.645"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Name="StatisticsButton" Content="Statistics" HorizontalAlignment="Left" Margin="48,0,0,175" Width="226" Cursor="Hand" Click="StatisticsButton_Click" RenderTransformOrigin="0.5,0.5" FontSize="36" FontFamily="Comic Sans MS" Height="70" VerticalAlignment="Bottom">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-3.517"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Name="ExitButton" Content="Exit" HorizontalAlignment="Left" Margin="60,0,0,62" Width="126" Cursor="Hand" Click="ExitButton_Click" RenderTransformOrigin="0.5,0.5" FontSize="36" FontFamily="Comic Sans MS" Height="70" VerticalAlignment="Bottom">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="7.862"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+        <!-- Options -->
+        <RadioButton Name="StandardButton" Content="Standard" HorizontalAlignment="Right" Margin="0,223,284,0" Cursor="Hand" VerticalAlignment="Top" Checked="StandardButton_Checked" IsChecked="True" RenderTransformOrigin="0.5,0.5" FontFamily="Comic Sans MS">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="3" ScaleY="3"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-4.179"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton Name="CustomButton" Content="Custom" HorizontalAlignment="Right" Margin="0,300,294,0" Cursor="Hand" VerticalAlignment="Top" Checked="CustomButton_Checked" RenderTransformOrigin="0.5,0.5" FontFamily="Comic Sans MS" Height="16" Width="66">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="3" ScaleY="3"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="5.434"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+
+        <TextBox Name="M" Margin="0,280,154,0" Height="54" VerticalAlignment="Top" FontSize="36" Text="5" FontFamily="Comic Sans MS" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Right" Width="60"/>
+        <TextBlock Text="x" HorizontalAlignment="Right" Margin="0,280,111,0" Width="34" Height="54" VerticalAlignment="Top" FontSize="36" FontFamily="Comic Sans MS">
+            <TextBlock.TextAlignment>
+                <TextAlignment>Center</TextAlignment>
+            </TextBlock.TextAlignment>
+        </TextBlock>
+        <TextBox x:Name="N" Margin="0,280,44,0" Height="54" VerticalAlignment="Top" FontSize="36" FontFamily="Comic Sans MS" Text="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Right" Width="58"/>
+
+        <!-- Help -->
+        <Button Name="AboutButton" Content="About" HorizontalAlignment="Right" Margin="0,0,57,62" Width="152" Cursor="Hand" Click="AboutButton_Click" RenderTransformOrigin="0.5,0.5" FontSize="36" FontFamily="Comic Sans MS" Height="70" VerticalAlignment="Bottom">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="4.683"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+    </Grid>
+</Window>

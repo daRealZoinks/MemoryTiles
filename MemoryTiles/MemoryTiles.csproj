@@ -1,0 +1,82 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="assets\cards\**" />
+		<Compile Remove="assets\profile_pictures\**" />
+		<EmbeddedResource Remove="assets\cards\**" />
+		<EmbeddedResource Remove="assets\profile_pictures\**" />
+		<None Remove="assets\cards\**" />
+		<None Remove="assets\profile_pictures\**" />
+		<Page Remove="assets\cards\**" />
+		<Page Remove="assets\profile_pictures\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="assets\images\cards\back\cardback.jpg" />
+	  <None Remove="assets\images\cards\face\chicken.jpg" />
+	  <None Remove="assets\images\cards\face\dog.jpg" />
+	  <None Remove="assets\images\cards\face\dogfrog.jpg" />
+	  <None Remove="assets\images\cards\face\egg.jpg" />
+	  <None Remove="assets\images\cards\face\mouth.jpg" />
+	  <None Remove="assets\images\cards\face\pumpkin.jpg" />
+	  <None Remove="assets\images\cards\face\snail.jpg" />
+	  <None Remove="assets\images\cards\face\spidercat.jpg" />
+	  <None Remove="assets\images\cards\face\therock.jpg" />
+	  <None Remove="assets\images\cards\face\watermelon.jpg" />
+	  <None Remove="assets\images\cards\face\weirdeyes.jpg" />
+	  <None Remove="assets\images\cards\face\weirdrender.jpg" />
+	  <None Remove="assets\images\profile_pictures\asiankid.jpg" />
+	  <None Remove="assets\images\profile_pictures\bizarre.jpg" />
+	  <None Remove="assets\images\profile_pictures\dawg.jpg" />
+	  <None Remove="assets\images\profile_pictures\dog.jpg" />
+	  <None Remove="assets\images\profile_pictures\duck.jpg" />
+	  <None Remove="assets\images\profile_pictures\jaek.jpg" />
+	  <None Remove="assets\images\profile_pictures\pepa.jpg" />
+	  <None Remove="assets\images\profile_pictures\pikachewsad.jpg" />
+	  <None Remove="assets\images\profile_pictures\shrek.jpg" />
+	  <None Remove="assets\images\profile_pictures\waltuh.jpg" />
+	  <None Remove="assets\music\readySetRelax.mp3" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="assets\music\readySetRelax.mp3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="save_files\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="assets\images\cards\back\cardback.jpg" />
+	  <Resource Include="assets\images\cards\face\chicken.jpg" />
+	  <Resource Include="assets\images\cards\face\dog.jpg" />
+	  <Resource Include="assets\images\cards\face\dogfrog.jpg" />
+	  <Resource Include="assets\images\cards\face\egg.jpg" />
+	  <Resource Include="assets\images\cards\face\mouth.jpg" />
+	  <Resource Include="assets\images\cards\face\pumpkin.jpg" />
+	  <Resource Include="assets\images\cards\face\snail.jpg" />
+	  <Resource Include="assets\images\cards\face\spidercat.jpg" />
+	  <Resource Include="assets\images\cards\face\therock.jpg" />
+	  <Resource Include="assets\images\cards\face\watermelon.jpg" />
+	  <Resource Include="assets\images\cards\face\weirdeyes.jpg" />
+	  <Resource Include="assets\images\cards\face\weirdrender.jpg" />
+	  <Resource Include="assets\images\profile_pictures\asiankid.jpg" />
+	  <Resource Include="assets\images\profile_pictures\bizarre.jpg" />
+	  <Resource Include="assets\images\profile_pictures\dawg.jpg" />
+	  <Resource Include="assets\images\profile_pictures\dog.jpg" />
+	  <Resource Include="assets\images\profile_pictures\duck.jpg" />
+	  <Resource Include="assets\images\profile_pictures\jaek.jpg" />
+	  <Resource Include="assets\images\profile_pictures\pepa.jpg" />
+	  <Resource Include="assets\images\profile_pictures\pikachewsad.jpg" />
+	  <Resource Include="assets\images\profile_pictures\shrek.jpg" />
+	  <Resource Include="assets\images\profile_pictures\waltuh.jpg" />
+	</ItemGroup>
+
+</Project>

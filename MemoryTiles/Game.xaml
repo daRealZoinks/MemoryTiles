@@ -1,0 +1,16 @@
+﻿<Window x:Class="MemoryTiles.Game"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MemoryTiles"
+        mc:Ignorable="d"
+        Title="Game" Height="800" Width="900">
+
+    <Grid>
+        <Grid x:Name="GameGrid" Margin="22,0,22,58" RenderTransformOrigin="0.5,0.5"/>
+        <Label x:Name="TimerLabel" Content="Timer: 00:00" HorizontalAlignment="Left" Margin="22,0,0,10" VerticalAlignment="Bottom" Width="189" FontSize="24" FontFamily="Comic Sans MS"/>
+        <Label x:Name="LevelLabel" Content="Level: 1" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="114" FontSize="24" FontFamily="Comic Sans MS"/>
+    </Grid>
+
+</Window>
