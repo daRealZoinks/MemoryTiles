@@ -17,7 +17,7 @@ You can save progress, create save files and load them, create custom size board
 
 Gameplay:
 
-<video controls src="README/Screen Recording 2025-05-08 220824.mp4" title="Title"></video>
+![alt text](<README/Screen Recording 2025-05-08 220824.gif>)
 
 ⚠️ Warning ⚠️:
 I didn't know how to create post-build actions. Soooooooooooooo... after you build the game from source, add the [asset](MemoryTiles/assets) folder to the build folder. Please. `MemoryTiles\bin\Debug\net6.0-windows`
